@@ -1,16 +1,13 @@
-name: belajar github action
-
-on: 
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions
+on:
   push:
     branches:
-      -main
-
-
+      - main
 jobs:
-  deploy:
-    name: hello world
+  test:
     runs-on: ubuntu-latest
-      
+
     steps:
-      - name: echo 
-        run : echo "hello world"
+      - name: greet world
+        run: echo "hello world, im learning cicd"
