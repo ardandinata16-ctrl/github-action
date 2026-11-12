@@ -1,0 +1,16 @@
+name: belajar github action
+
+on: 
+  push:
+    branches:
+      -main
+
+
+jobs:
+  deploy:
+    name: hello world
+    runs-on: ubuntu-latest
+      
+    steps:
+      - name: echo 
+        run : echo "hello world"
